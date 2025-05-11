@@ -26,7 +26,6 @@ const Home = () => {
                 password: userPassword,
             })
             .then((response) => {
-                console.log("Response:", response.data);
                if(response.data.accessToken) {
                 router.push("/");
                 localStorage.setItem("accessToken", response.data.accessToken);
@@ -59,10 +58,10 @@ const Home = () => {
     <div className="w-full h-screen relative">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: 'url(/images/Rectangle.png)' }}
+        style={{ backgroundImage: 'url(/images/Background.png)' }}
       ></div>
 
-      <div className="flex flex-col relative z-10">
+      <div className="flex flex-col relative z-10" style={{ backgroundImage: 'url(/images/Background.png)' }}>
         <div className="flex items-center">
           <LeftArrow />
         </div>
