@@ -38,7 +38,7 @@ const Home = () => {
     fetchPosts();
   },[])
   return (
-    <div className="flex w-full min-h-screen bg-black flex-col px-[16px] pt-[30px]"> 
+    <div className="flex w-full min-h-screen bg-black flex-col px-[16px] pt-[30px]" style={{ backgroundImage: 'url(/images/Background.png)' }}> 
       <Help/>
       <p className="pl-[20px] text-[14px] text-white mt-[34px] mb-3"> Миний бичсэн асуудлууд </p> 
       <div className="flex flex-col gap-4 mx-[35px] mb-[130px]">
